@@ -3,6 +3,8 @@ import Login from "./components/Login/Login";
 import {BrowserRouter, Route, Routes } from "react-router-dom";
 import Course from "./components/course/Course";
 import Logindata from "./components/Login/Logindata";
+import Book from "./components/Book/Book";
+import Bookview from "./components/Book/Bookview";
 function App() {
   return (
     <div>
@@ -15,6 +17,8 @@ function App() {
   <Route path={'/'} element={<Login/>}></Route>
   <Route path={'/Ldata'} element={<Logindata/>}></Route>
   <Route path={'/Cdata'} element={<Course/>}></Route>
+  <Route path={'/book'} element={<Book/>}></Route>
+  <Route path={"/bookview"} element={<Bookview/>}></Route>
 </Routes>
 </BrowserRouter>
      
